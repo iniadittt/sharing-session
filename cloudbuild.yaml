@@ -9,7 +9,7 @@ steps:
     args:
     - 'push'
     - 'us-central1-docker.pkg.dev/$PROJECT_ID/sharingsession-artifact/model-image:$COMMIT_SHA'
-  - name: 'gcr.io/cloud-builder/gcloud'
+  - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: gcloud
     args:
     - 'run'
