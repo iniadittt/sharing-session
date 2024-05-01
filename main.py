@@ -33,7 +33,7 @@ classess = ["Coris julis", "Trigloporus lastoviza", "Mugil cephalus",]
 @app.route('/', methods=['GET'])
 def index():
     return jsonify({
-        'Message': 'Hello World',
+        'Message': 'Hello World!',
     }), HTTPStatus.OK
 
 @app.route('/predict', methods=['POST'])
